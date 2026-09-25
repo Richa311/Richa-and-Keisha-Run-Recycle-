@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Run recycle"
 run/main_scene="uid://cqi2yb4yy2rvh"
-config/features=PackedStringArray("4.7", "GL Compatibility")
+config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]
