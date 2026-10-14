@@ -1,3 +1,48 @@
 [gd_scene format=3 uid="uid://0n3q2fsok78k"]
 
+[ext_resource type="Texture2D" uid="uid://83knvcvvmgtp" path="res://Assests/New Piskel.png" id="1_sm0jr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vljc"]
+atlas = ExtResource("1_sm0jr")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sva22"]
+atlas = ExtResource("1_sm0jr")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2k3ou"]
+atlas = ExtResource("1_sm0jr")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t6tti"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vljc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sva22")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2k3ou")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7dvkb"]
+
 [node name="Node2D" type="Node2D" unique_id=285126287]
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=1057309228]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=616677760]
+position = Vector2(277.25, 173.50002)
+scale = Vector2(1.8593751, 1.8437504)
+sprite_frames = SubResource("SpriteFrames_t6tti")
+frame_progress = 0.5986014
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=292415722]
+shape = SubResource("CircleShape2D_7dvkb")
+disabled = true
