@@ -1,4 +1,4 @@
-[gd_scene load_steps=0 format=3 uid="uid://0n3q2fsok78k"]
+[gd_scene format=3 uid="uid://0n3q2fsok78k"]
 
 [ext_resource type="Texture2D" uid="uid://83knvcvvmgtp" path="res://Assests/New Piskel.png" id="1_sm0jr"]
 
@@ -38,10 +38,10 @@ animations = [{
 [node name="Player" type="CharacterBody2D" parent="." unique_id=1057309228]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=616677760]
-position = Vector2(277.25, 173.50002)
-scale = Vector2(1.8593751, 1.8437504)
+position = Vector2(304.00003, 169.00002)
+scale = Vector2(3.6796875, 3.9218748)
 sprite_frames = SubResource("SpriteFrames_t6tti")
-frame_progress = 0.5986014
+frame_progress = 0.39237648
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=292415722]
 shape = SubResource("CircleShape2D_7dvkb")
