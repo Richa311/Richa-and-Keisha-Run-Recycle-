@@ -168,7 +168,7 @@ sources/0 = SubResource("TileSetAtlasSource_wrm1d")
 [node name="Game" type="Node2D" unique_id=1075837638]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1022214062]
-position = Vector2(297, 208.00002)
+position = Vector2(296.00003, 207)
 scale = Vector2(0.90234447, 1.0937502)
 sprite_frames = SubResource("SpriteFrames_qxrlw")
 
