@@ -38,11 +38,13 @@ animations = [{
 [node name="Player" type="CharacterBody2D" parent="." unique_id=1057309228]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=616677760]
-position = Vector2(304.00003, 169.00002)
+position = Vector2(357, 184.00002)
 scale = Vector2(3.6796875, 3.9218748)
 sprite_frames = SubResource("SpriteFrames_t6tti")
-frame_progress = 0.39237648
+frame = 1
+frame_progress = 0.59392023
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=292415722]
 shape = SubResource("CircleShape2D_7dvkb")
 disabled = true
+debug_color = Color(0, 0.6, 0.7019608, 0.41960785)
