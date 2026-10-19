@@ -1,7 +1,8 @@
-[gd_scene format=3 uid="uid://cqi2yb4yy2rvh"]
+[gd_scene load_steps=10 format=3 uid="uid://cqi2yb4yy2rvh"]
 
 [ext_resource type="Texture2D" uid="uid://83knvcvvmgtp" path="res://Assests/New Piskel.png" id="1_ebmjs"]
 [ext_resource type="Texture2D" uid="uid://cwstl5cc0gdxc" path="res://Assests/world_tileset.png" id="2_qxrlw"]
+[ext_resource type="PackedScene" uid="uid://cpl0doyujdnjg" path="res://Scenes/Level_1.tscn" id="3_wrm1d"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5vljc"]
 atlas = ExtResource("1_ebmjs")
@@ -27,7 +28,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_2k3ou")
 }],
-"loop": 1,
+"loop": true,
 "name": &"default",
 "speed": 7.0
 }]
@@ -165,12 +166,14 @@ texture = ExtResource("2_qxrlw")
 [sub_resource type="TileSet" id="TileSet_t6tti"]
 sources/0 = SubResource("TileSetAtlasSource_wrm1d")
 
-[node name="Game" type="Node2D" unique_id=1075837638]
+[node name="Game" type="Node2D"]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1022214062]
-position = Vector2(25.000061, 23.00003)
-scale = Vector2(0.90234447, 1.0937502)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(31, -20)
+scale = Vector2(0.902344, 1.09375)
 sprite_frames = SubResource("SpriteFrames_qxrlw")
 
-[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=291483155]
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_set = SubResource("TileSet_t6tti")
+
+[node name="Node2D" parent="." instance=ExtResource("3_wrm1d")]
