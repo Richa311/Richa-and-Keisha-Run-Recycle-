@@ -15,7 +15,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Run recycle"
-run/main_scene="uid://cqi2yb4yy2rvh"
+run/main_scene="uid://cpl0doyujdnjg"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
