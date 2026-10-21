@@ -1,17 +1,17 @@
-[gd_scene format=3 uid="uid://0n3q2fsok78k"]
+[gd_scene load_steps=7 format=3 uid="uid://0n3q2fsok78k"]
 
-[ext_resource type="Texture2D" uid="uid://83knvcvvmgtp" path="res://Assests/New Piskel.png" id="1_sm0jr"]
+[ext_resource type="Texture2D" uid="uid://83knvcvvmgtp" path="res://Assests/New Piskel.png" id="1_v0iea"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5vljc"]
-atlas = ExtResource("1_sm0jr")
+atlas = ExtResource("1_v0iea")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sva22"]
-atlas = ExtResource("1_sm0jr")
+atlas = ExtResource("1_v0iea")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2k3ou"]
-atlas = ExtResource("1_sm0jr")
+atlas = ExtResource("1_v0iea")
 region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_t6tti"]
@@ -26,25 +26,25 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_2k3ou")
 }],
-"loop": 1,
+"loop": true,
 "name": &"default",
 "speed": 7.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7dvkb"]
 
-[node name="Node2D" type="Node2D" unique_id=285126287]
+[node name="Node2D" type="Node2D"]
 
-[node name="Player" type="CharacterBody2D" parent="." unique_id=1057309228]
+[node name="Player" type="CharacterBody2D" parent="."]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=616677760]
-position = Vector2(357, 184.00002)
-scale = Vector2(3.6796875, 3.9218748)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(38.2812, 28.8125)
+scale = Vector2(1.98242, 2.38672)
 sprite_frames = SubResource("SpriteFrames_t6tti")
 frame = 1
-frame_progress = 0.59392023
+frame_progress = 0.59392
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=292415722]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_7dvkb")
 disabled = true
-debug_color = Color(0, 0.6, 0.7019608, 0.41960785)
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
