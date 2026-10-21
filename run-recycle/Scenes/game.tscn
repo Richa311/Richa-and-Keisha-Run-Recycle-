@@ -166,15 +166,25 @@ texture = ExtResource("2_qxrlw")
 [sub_resource type="TileSet" id="TileSet_t6tti"]
 sources/0 = SubResource("TileSetAtlasSource_wrm1d")
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t6tti"]
+
 [node name="Game" type="Node2D" unique_id=183304730]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=303283542]
-position = Vector2(3.8146973e-06, -19)
+position = Vector2(15, -18)
 scale = Vector2(0.902344, 1.09375)
 sprite_frames = SubResource("SpriteFrames_qxrlw")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1622867878]
-tile_map_data = PackedByteArray("AAD1/wYAAAAIAAUAAADh/wcAAAAIAAgAAADt/wgAAAAIAAgAAADz/wYAAAAIAAgAAAAOAAUAAAAIAAgAAABeAAkAAAAIAAgAAABRAAUAAAAIAAgAAAAiAAQAAAAIAAgAAAARAAcAAAAIAAUAAAAQAAYAAAAIAAYAAAAaAAgAAAAIAAYAAAA0AAcAAAAIAAYAAAA=")
+tile_map_data = PackedByteArray("AAD1/wYAAAAIAAUAAADh/wcAAAAIAAgAAAAOAAUAAAAIAAgAAABeAAkAAAAIAAgAAABRAAUAAAAIAAgAAAAiAAQAAAAIAAgAAAARAAcAAAAIAAUAAAAQAAYAAAAIAAYAAAAaAAgAAAAIAAYAAAA0AAcAAAAIAAYAAAA=")
 tile_set = SubResource("TileSet_t6tti")
 
 [node name="Node2D" parent="." unique_id=672625964 instance=ExtResource("3_wrm1d")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=666418377]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Camera2D" unique_id=1590946345]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D" unique_id=2071296755]
+position = Vector2(13, -15)
+shape = SubResource("CapsuleShape2D_t6tti")
