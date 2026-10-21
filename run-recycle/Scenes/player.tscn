@@ -39,9 +39,15 @@ height = 110.0
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1606661734]
 
+<<<<<<< Updated upstream
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=616677760]
 position = Vector2(390, -62.99997)
 scale = Vector2(3.6796875, 3.9218748)
+=======
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(23.7812, 13.3125)
+scale = Vector2(1.07617, 1.41797)
+>>>>>>> Stashed changes
 sprite_frames = SubResource("SpriteFrames_t6tti")
 frame = 1
 frame_progress = 0.59392023
