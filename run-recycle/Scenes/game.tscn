@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://83knvcvvmgtp" path="res://Assests/New Piskel.png" id="1_ebmjs"]
 [ext_resource type="Texture2D" uid="uid://cwstl5cc0gdxc" path="res://Assests/world_tileset.png" id="2_qxrlw"]
-[ext_resource type="PackedScene" uid="uid://cpl0doyujdnjg" path="res://Scenes/Level_1.tscn" id="3_wrm1d"]
+[ext_resource type="PackedScene" uid="uid://cpl0doyujdnjg" path="res://Scenes/Platform.tscn" id="3_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://3krx1h13xs4d" path="res://Scenes/player.tscn" id="5_wowpa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5vljc"]
@@ -205,6 +205,6 @@ position = Vector2(13, -15)
 shape = SubResource("CapsuleShape2D_t6tti")
 
 [node name="Player" parent="." unique_id=1820970069 instance=ExtResource("5_wowpa")]
-position = Vector2(-287, -122)
+position = Vector2(-343, 5)
 
 [node name="Node2D" parent="." unique_id=10134736 instance=ExtResource("3_wrm1d")]
