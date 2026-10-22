@@ -1,6 +1,11 @@
-[gd_scene format=3 uid="uid://0n3q2fsok78k"]
+[gd_scene format=3 uid="uid://3krx1h13xs4d"]
 
+[ext_resource type="Script" uid="uid://b1kte0arnga5m" path="res://Scenes/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://83knvcvvmgtp" path="res://Assests/New Piskel.png" id="1_sm0jr"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cvnsp"]
+radius = 16.0
+height = 54.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5vljc"]
 atlas = ExtResource("1_sm0jr")
@@ -14,7 +19,7 @@ region = Rect2(32, 0, 32, 32)
 atlas = ExtResource("1_sm0jr")
 region = Rect2(0, 32, 32, 32)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_t6tti"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_6t5aa"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -31,29 +36,14 @@ animations = [{
 "speed": 7.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t6tti"]
-radius = 39.0
-height = 110.0
+[node name="Player" type="CharacterBody2D" unique_id=1820970069]
+script = ExtResource("1_cvnsp")
 
-[node name="Node2D" type="Node2D" unique_id=285126287]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=581234489]
+position = Vector2(382, -30)
+shape = SubResource("CapsuleShape2D_cvnsp")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1606661734]
-
-<<<<<<< Updated upstream
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=616677760]
-position = Vector2(390, -62.99997)
-scale = Vector2(3.6796875, 3.9218748)
-=======
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(23.7812, 13.3125)
-scale = Vector2(1.07617, 1.41797)
->>>>>>> Stashed changes
-sprite_frames = SubResource("SpriteFrames_t6tti")
-frame = 1
-frame_progress = 0.59392023
-
-[node name="Player" type="CharacterBody2D" parent="." unique_id=1057309228]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1473533343]
-position = Vector2(382, -52)
-shape = SubResource("CapsuleShape2D_t6tti")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=726926611]
+position = Vector2(384.00003, -32.000004)
+scale = Vector2(1.6210936, 1.8671864)
+sprite_frames = SubResource("SpriteFrames_6t5aa")
