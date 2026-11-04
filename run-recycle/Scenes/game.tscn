@@ -1,14 +1,9 @@
-[gd_scene load_steps=17 format=4 uid="uid://duigxooe5448q"]
+[gd_scene load_steps=12 format=4 uid="uid://duigxooe5448q"]
 
 [ext_resource type="Texture2D" uid="uid://83knvcvvmgtp" path="res://Assests/New Piskel.png" id="1_ebmjs"]
 [ext_resource type="Texture2D" uid="uid://cwstl5cc0gdxc" path="res://Assests/world_tileset.png" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://cpl0doyujdnjg" path="res://Scenes/Platform.tscn" id="3_wrm1d"]
-[ext_resource type="Texture2D" uid="uid://dp80tr0lg1o5c" path="res://Assests/apple_trash -1.png.png" id="5_h4fw4"]
 [ext_resource type="PackedScene" uid="uid://0n3q2fsok78k" path="res://Scenes/player.tscn" id="5_wowpa"]
-[ext_resource type="Texture2D" uid="uid://ccshocaopls8y" path="res://Assests/Banana_trash -1.png.png" id="6_ldgsr"]
-[ext_resource type="Texture2D" uid="uid://disc5uras4g7e" path="res://Assests/Broken mug-1.png.png" id="7_o5yvi"]
-[ext_resource type="Texture2D" uid="uid://cr3su8yj1v5cs" path="res://Assests/Plastic_bottle -1.png.png" id="8_rku1e"]
-[ext_resource type="Texture2D" uid="uid://cmu1eju4vyx0s" path="res://Assests/Used drink bottle -1.png.png" id="9_rfjv2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5vljc"]
 atlas = ExtResource("1_ebmjs")
@@ -240,104 +235,3 @@ tile_set = SubResource("TileSet_t6tti")
 position = Vector2(96, -333)
 
 [node name="Node2D" parent="." instance=ExtResource("3_wrm1d")]
-
-[node name="AppleTrash1_png" type="Sprite2D" parent="."]
-position = Vector2(-869.5, 120.5)
-scale = Vector2(0.84375, 0.84375)
-texture = ExtResource("5_h4fw4")
-
-[node name="BananaTrash1_png" type="Sprite2D" parent="."]
-position = Vector2(-788, 297)
-texture = ExtResource("6_ldgsr")
-
-[node name="BrokenMug1_png" type="Sprite2D" parent="."]
-position = Vector2(-415, 135)
-texture = ExtResource("7_o5yvi")
-
-[node name="PlasticBottle1_png" type="Sprite2D" parent="."]
-position = Vector2(419, 137)
-texture = ExtResource("8_rku1e")
-
-[node name="UsedDrinkBottle1_png" type="Sprite2D" parent="."]
-position = Vector2(1730, 90)
-texture = ExtResource("9_rfjv2")
-
-[node name="UsedDrinkBottle1_png2" type="Sprite2D" parent="."]
-position = Vector2(1443, 100)
-texture = ExtResource("9_rfjv2")
-
-[node name="BananaTrash1_png2" type="Sprite2D" parent="."]
-position = Vector2(1313, 89)
-texture = ExtResource("6_ldgsr")
-
-[node name="AppleTrash1_png2" type="Sprite2D" parent="."]
-position = Vector2(2300, 8)
-texture = ExtResource("5_h4fw4")
-
-[node name="UsedDrinkBottle1_png3" type="Sprite2D" parent="."]
-position = Vector2(2277, 105)
-texture = ExtResource("9_rfjv2")
-
-[node name="BananaTrash1_png3" type="Sprite2D" parent="."]
-position = Vector2(1933, -5)
-texture = ExtResource("6_ldgsr")
-
-[node name="BrokenMug1_png2" type="Sprite2D" parent="."]
-position = Vector2(2523, 345)
-texture = ExtResource("7_o5yvi")
-
-[node name="BananaTrash1_png4" type="Sprite2D" parent="."]
-position = Vector2(2598, 315)
-texture = ExtResource("6_ldgsr")
-
-[node name="PlasticBottle1_png2" type="Sprite2D" parent="."]
-position = Vector2(1997, 363)
-texture = ExtResource("8_rku1e")
-
-[node name="BrokenMug1_png3" type="Sprite2D" parent="."]
-position = Vector2(1665, 296)
-texture = ExtResource("7_o5yvi")
-
-[node name="UsedDrinkBottle1_png4" type="Sprite2D" parent="."]
-position = Vector2(1340, 315)
-texture = ExtResource("9_rfjv2")
-
-[node name="BananaTrash1_png5" type="Sprite2D" parent="."]
-position = Vector2(1180, 220)
-texture = ExtResource("6_ldgsr")
-
-[node name="AppleTrash1_png3" type="Sprite2D" parent="."]
-position = Vector2(841, 329)
-texture = ExtResource("5_h4fw4")
-
-[node name="UsedDrinkBottle1_png5" type="Sprite2D" parent="."]
-position = Vector2(589, 314)
-texture = ExtResource("9_rfjv2")
-
-[node name="BrokenMug1_png4" type="Sprite2D" parent="."]
-position = Vector2(376, 265)
-texture = ExtResource("7_o5yvi")
-
-[node name="PlasticBottle1_png3" type="Sprite2D" parent="."]
-position = Vector2(240, 333)
-texture = ExtResource("8_rku1e")
-
-[node name="BananaTrash1_png6" type="Sprite2D" parent="."]
-position = Vector2(799, 137)
-texture = ExtResource("6_ldgsr")
-
-[node name="AppleTrash1_png4" type="Sprite2D" parent="."]
-position = Vector2(742, 56)
-texture = ExtResource("5_h4fw4")
-
-[node name="BananaTrash1_png7" type="Sprite2D" parent="."]
-position = Vector2(55, 249)
-texture = ExtResource("6_ldgsr")
-
-[node name="UsedDrinkBottle1_png6" type="Sprite2D" parent="."]
-position = Vector2(-9, 85)
-texture = ExtResource("9_rfjv2")
-
-[node name="BrokenMug1_png5" type="Sprite2D" parent="."]
-position = Vector2(44, -13)
-texture = ExtResource("7_o5yvi")
