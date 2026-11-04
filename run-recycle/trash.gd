@@ -19,3 +19,5 @@ func _ready() -> void:
 	elif trash == trashType.drink:
 		sprite_2d.texture = load("res://Assests/Used drink bottle -1.png.png")
 		
+
+		
