@@ -1,10 +1,11 @@
-[gd_scene load_steps=0 format=3 uid="uid://bltwyy6d40uac"]
+[gd_scene format=3 uid="uid://bltwyy6d40uac"]
 
 [ext_resource type="Script" uid="uid://cfnng0qonchui" path="res://trash.gd" id="1_tsx7w"]
 [ext_resource type="Texture2D" uid="uid://dp80tr0lg1o5c" path="res://Assests/apple_trash -1.png.png" id="2_3xsam"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t6tti"]
-radius = 12.0
+radius = 31.0
+height = 64.0
 
 [node name="trash" type="Area2D" unique_id=228265031]
 script = ExtResource("1_tsx7w")
@@ -15,3 +16,6 @@ shape = SubResource("CapsuleShape2D_t6tti")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=236852266]
 position = Vector2(3, 3)
 texture = ExtResource("2_3xsam")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
