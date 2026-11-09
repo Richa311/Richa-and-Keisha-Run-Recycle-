@@ -25,13 +25,34 @@ func _ready() -> void:
 	
 
 func check_trash (key):
-	print (key)
-	print (trash)	
-
-
+	if !close:
+		return
+	if key == 0:
+		print ("press_red")
+		if trash == trashType.drink  or trash == trashType.mug:
+			print("Correct! Used bottle and a broken mug goes into the red bin.")  
+			queue_free()
+		else: 
+			get_tree().reload_current_scene()
+	elif key == 1:
+		print ("press_yellow")
+		if trash == trashType.bottle: 
+			print("Correct! Plastic bottle goes into the yellow bin.") 
+			queue_free()
+		else: 
+			get_tree().reload_current_scene()
+	elif key == 2: 
+		print (" press_green")	
+		if trash == trashType.apple  or  trash == trashType.banana:
+			print("Correct! Apple and banana goes into the green bin.")
+			queue_free()
+		else: 
+			get_tree().reload_current_scene()
 func _on_body_entered(body: Node2D) -> void:
+	print("Entered trash")
 	close = true
 
 
 func _on_body_exited(body: Node2D) -> void:
+	print("Exited trash")
 	close = false
