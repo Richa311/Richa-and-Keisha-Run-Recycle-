@@ -1,4 +1,4 @@
-[gd_scene load_steps=0 format=3 uid="uid://bltwyy6d40uac"]
+[gd_scene load_steps=4 format=3 uid="uid://cm44lhq3f838j"]
 
 [ext_resource type="Script" uid="uid://cfnng0qonchui" path="res://trash.gd" id="1_tsx7w"]
 [ext_resource type="Texture2D" uid="uid://dp80tr0lg1o5c" path="res://Assests/apple_trash -1.png.png" id="2_3xsam"]
@@ -6,12 +6,12 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t6tti"]
 radius = 12.0
 
-[node name="trash" type="Area2D" unique_id=228265031]
+[node name="trash" type="Area2D"]
 script = ExtResource("1_tsx7w")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=185231673]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_t6tti")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=236852266]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(3, 3)
 texture = ExtResource("2_3xsam")
