@@ -6,6 +6,8 @@ enum trashType { apple, banana, mug, bottle, drink}
 # 2. Export a variable using the enum type
 @export var trash = trashType.apple
 @onready var sprite_2d: Sprite2D = $Sprite2D
+var close = false
+
 
 func _ready() -> void:
 	if trash == trashType.apple:
@@ -21,3 +23,11 @@ func _ready() -> void:
 		
 
 		
+
+
+func _on_body_entered(body: Node2D) -> void:
+	close = true
+
+
+func _on_body_exited(body: Node2D) -> void:
+	close = false
