@@ -7,13 +7,13 @@
 radius = 31.0
 height = 64.0
 
-[node name="trash" type="Area2D" unique_id=228265031]
+[node name="trash" type="Area2D"]
 script = ExtResource("1_tsx7w")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=185231673]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_t6tti")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=236852266]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(3, 3)
 texture = ExtResource("2_3xsam")
 
