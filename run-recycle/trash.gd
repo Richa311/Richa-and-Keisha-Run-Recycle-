@@ -20,9 +20,13 @@ func _ready() -> void:
 		sprite_2d.texture = load("res://Assests/Plastic_bottle -1.png.png")
 	elif trash == trashType.drink:
 		sprite_2d.texture = load("res://Assests/Used drink bottle -1.png.png")
-		
+	
+	EventBus.trash_collected.connect(check_trash)
+	
 
-		
+func check_trash (key):
+	print (key)
+	print (trash)	
 
 
 func _on_body_entered(body: Node2D) -> void:
